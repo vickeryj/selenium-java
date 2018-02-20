@@ -12,6 +12,7 @@ public class SampleTest {
   @Test
   public void testGoogle() throws java.net.MalformedURLException {
     WebDriver driver  = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), DesiredCapabilities.chrome());
-		driver.navigate().to("http://google.com");
+    driver.navigate().to("http://google.com");
+    driver.quit();
   }
 }
